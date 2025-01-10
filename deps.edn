@@ -1,0 +1,12 @@
+{:deps
+ {com.taoensso/timbre        {:mvn/version "6.6.1"}
+  ;; https://github.com/taoensso/timbre/wiki/4-Interop#java-logging
+  com.taoensso/timbre-slf4j  {:mvn/version "6.6.1"}
+  org.slf4j/jcl-over-slf4j   {:mvn/version "2.0.16"}
+  org.slf4j/jul-to-slf4j     {:mvn/version "2.0.16"}
+  org.slf4j/log4j-over-slf4j {:mvn/version "2.0.16"}
+  org.slf4j/slf4j-api        {:mvn/version "2.0.16"}}
+ :aliases
+ {:build
+  {:deps       {io.github.clojure/tools.build {:mvn/version "0.10.6"}}
+   :ns-default build}}}
